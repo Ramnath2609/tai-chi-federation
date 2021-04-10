@@ -30,25 +30,25 @@ const Appbar = () => {
           <Collapse navbar className='collapse navbar-collapse' id='Mobile-view-navbar-collapse'>
             <Nav className="nav navbar-nav navbar-right" navbar >
               <NavItem>
-                <Link className="header-links" to="/whatIsTaiChi">
-                  <NavLink>What is Tai Chi</NavLink>
+                <Link className="header-links" to="/what-is-tai-chi">
+                  <NavLink>What is Tai Chi ?</NavLink>
                 </Link>
               </NavItem>
 
               <NavItem>
-                <Link className="header-links" to="/historyofYangsFamily">
+                <Link className="header-links" to="/history-of-yangs-family">
                   <NavLink>History of Yang's Family Taiji Quan</NavLink>
                 </Link>
               </NavItem>
 
               <NavItem>
-                <Link className="header-links" to="/yangTaiji">
+                <Link className="header-links" to="/yang-taiji-quan-in-india">
                   <NavLink>Yang Taiji Quan In India</NavLink>
                 </Link>
               </NavItem>
 
               <NavItem>
-                <Link className="header-links" to="/benefitsOfTaijiQuan">
+                <Link className="header-links" to="/benefits-of-taiji-quan">
                   <NavLink>Benefits of Taiji Quan</NavLink>
                 </Link>
               </NavItem>
@@ -60,13 +60,13 @@ const Appbar = () => {
               </NavItem>
 
               <NavItem>
-                <Link className="header-links" to="/photoGallery">
-                  <NavLink>Photo Gallery</NavLink>
+                <Link className="header-links" to="/gallery">
+                  <NavLink>Gallery</NavLink>
                 </Link>
               </NavItem>
 
               <NavItem>
-                <Link className="header-links" to="/contactus">
+                <Link className="header-links" to="/contact-us">
                   <NavLink>Contact Us</NavLink>
                 </Link>
               </NavItem>
