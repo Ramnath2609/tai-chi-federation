@@ -77,13 +77,13 @@ const Appbar = () => {
       </nav>
 
       <Route exact path="/" component={Home} />
-      <Route exact path="/whatIsTaiChi" component={whatIsTaiChi} />
-      <Route exact path="/historyofYangsFamily" component={HistoryofYangsFamily} />
-      <Route exact path="/yangTaiji" component={YangTaiji} />
-      <Route exact path="/benefitsOfTaijiQuan" component={BenefitsOfTaijiQuan} />
+      <Route exact path="/what-is-tai-chi" component={whatIsTaiChi} />
+      <Route exact path="/history-of-yangs-yamily" component={HistoryofYangsFamily} />
+      <Route exact path="/yang-taiji-quan-in-india" component={YangTaiji} />
+      <Route exact path="/benefits-of-taiji-quan" component={BenefitsOfTaijiQuan} />
       <Route exact path="/testimonials" component={Testimonials} />
-      <Route exact path="/photoGallery" component={PhotoGallery} />
-      <Route exact path="/contactus" component={ContactUS} />
+      <Route exact path="/gallery" component={PhotoGallery} />
+      <Route exact path="/contact-us" component={ContactUS} />
     </>
   )
 }
