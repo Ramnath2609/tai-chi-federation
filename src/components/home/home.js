@@ -21,7 +21,7 @@ const Home = () => {
 
       <div class="homeContent">
         <h2 class="header2">
-          <span class="HomeTitle">Home</span>
+          <span class="HomeTitle">What is Tai-Chi ?</span>
           <div class="homeHorizontalLine" />
         </h2>
         <p class="homeText">
