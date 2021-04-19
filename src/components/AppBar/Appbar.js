@@ -10,6 +10,7 @@ import Testimonials from "../Testimonials/Testimonials";
 import PhotoGallery from "../Photo-Gallery/Photo-Gallery";
 import ContactUS from "../Contact-Us/Contact-Us";
 import DownArrow from "../../image/drop-down-arrow.svg"
+import "../componentStyles.css";
 
 const Appbar = () => {
   return (
@@ -38,7 +39,7 @@ const Appbar = () => {
               <UncontrolledDropdown nav inNavbar className="dropdown-nav">
                 <DropdownToggle nav caret>
                   Taiji Quan 
-                  <img src={DownArrow} className="dropdown-arrow"/>
+                  <img alt="dropdownarrow" src={DownArrow} className="dropdown-arrow"/>
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>

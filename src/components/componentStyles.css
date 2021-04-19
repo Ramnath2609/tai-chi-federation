@@ -1,0 +1,22 @@
+.dropdown-menu {
+    animation: dropdownAnimation 400ms ease-in-out forwards;
+    transform-origin: top center;
+}
+ 
+.dropdown {
+    perspective: 1000px;
+}
+
+@keyframes dropdownAnimation {
+    0% {
+        transform: rotateX(-90deg)
+    }
+    70% {
+        transform: rotateX(20deg) 
+    }
+    100% {
+        transform: rotateX(0deg) 
+    }
+}
+
+
