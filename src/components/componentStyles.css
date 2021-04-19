@@ -1,5 +1,5 @@
 .dropdown-menu {
-    animation: dropdownAnimation 400ms ease-in-out forwards;
+    animation: dropdownAnimation 300ms ease-in-out forwards;
     transform-origin: top center;
 }
  
@@ -9,13 +9,13 @@
 
 @keyframes dropdownAnimation {
     0% {
-        transform: rotateX(-90deg)
+        transform: scaleY(0)
     }
-    70% {
-        transform: rotateX(20deg) 
+    80% {
+        transform: scaleY(1.1)
     }
     100% {
-        transform: rotateX(0deg) 
+        transform: scaleY(1)
     }
 }
 
