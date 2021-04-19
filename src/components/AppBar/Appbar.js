@@ -24,7 +24,7 @@ const Appbar = () => {
               <span className='icon-bar'></span>
             </button>
             <Link className="header-links navbar-brand page-scroll" to="/">
-              <NavLink>Tai Chi Federation of India</NavLink>
+              <NavLink className="header-title" href="/">Tai Chi Federation of India</NavLink>
             </Link>
           </div>
 
@@ -42,13 +42,19 @@ const Appbar = () => {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    History of Yang's Family Taiji Quan
+                    <Link className="header-dropdown-links" to="/history-of-yangs-family">
+                        <NavLink>History of Yang's Family Taiji Quan</NavLink>
+                    </Link>
                   </DropdownItem>
                   <DropdownItem>
-                    Yang Taiji Quan In India
+                    <Link className="header-dropdown-links" to="/yang-taiji-quan-in-india">
+                      <NavLink>Yang Taiji Quan In India</NavLink>
+                    </Link>
                   </DropdownItem>
                   <DropdownItem>
-                    Benefits of Taiji Quan
+                    <Link className="header-dropdown-links" to="/benefits-of-taiji-quan">
+                      <NavLink>Benefits of Taiji Quan</NavLink>
+                    </Link>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>

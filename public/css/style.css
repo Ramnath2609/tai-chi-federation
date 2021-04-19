@@ -109,6 +109,15 @@ ul, ol {
     background-color: transparent;
     border: 0;
 }
+.header-dropdown-links > a {
+	color: black;
+}
+
+.header-title {
+	letter-spacing: 1px;
+	font-size: 30px;
+	text-shadow: 2px 2px black;
+}
 
 .dropdown-item:hover {
 	background-color: lightgray;
