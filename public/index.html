@@ -4,10 +4,67 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <title>Tai Chi Federation of India</title>
+  <style>
+    #taichi-loader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 999999;
+      background: #A6ACAF;
+    }
+
+    @keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+      }
+
+      100% {
+        -webkit-transform: rotate(-359deg);
+        transform: rotate(-359deg)
+      }
+    }
+
+    #taichi-loader:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 145px;
+      height: 145px;
+      margin: -72px 0 0 -72px;
+      background: url(./loader/ellipse.png) no-repeat 0 0;
+      -webkit-animation: fa-spin 3s infinite linear;
+      animation: fa-spin 3s infinite linear;
+    }
+
+    #taichi-loader:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 145px;
+      height: 145px;
+      margin: -72px 0 0 -72px;
+      background: url(./loader/ball.png) no-repeat 0 0;
+      -webkit-animation: fa-spin 4s infinite linear;
+      animation: fa-spin 4s infinite linear;
+    }
+  </style>
 </head>
 
 <body id="page-top">
-  <div id="root"></div>
   <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script>
+    $(window).load(function () {
+      $('body').removeClass('preloader');
+      $('#taichi-loader').fadeOut(300);
+    });
+  </script>
+  <div id="taichi-loader"></div>
+  <div id="root">
+  </div>
 </body>
