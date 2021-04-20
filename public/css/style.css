@@ -5,6 +5,12 @@ body, html {
 	font-weight: 400;
 	width: 100% !important;
 	height: 100% !important;
+	-ms-overflow-style: none;  
+  	scrollbar-width: none;  
+}
+
+body::-webkit-scrollbar {
+	display: none;
 }
 
 /* Anchor tag */
@@ -40,9 +46,9 @@ ul, ol {
 
 #menu.navbar-default {
 	position: relative;
-    background: #2C3E50;
+    background: #001835;
     background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);
-    background: linear-gradient(to right, #4CA1AF, #2C3E50)
+    /*background: linear-gradient(to right, #4CA1AF, #2C3E50)*/
 }
 
 #menu a.navbar-brand {
@@ -140,11 +146,24 @@ ul, ol {
 }
 
 .homeContent {
-	background: #43cea2;
-    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);
-    background: linear-gradient(to right, #185a9d, #43cea2);
+	background: #001835;
+    /* background: -webkit-linear-gradient(to right, #185a9d, #43cea2);
+    background: linear-gradient(to right, #185a9d, #43cea2); */
     width: 100%;
-    height: 460px;
+    /* height: 460px; */
+}
+
+.jumbotron-content {
+	color: black;
+}
+
+.yang-taiji-list {
+	list-style-type:decimal;
+	font-size: 16px;
+}
+.benefits-list {
+	list-style-type: disc;
+	font-size: 20px;
 }
 
 /* Header 2 */

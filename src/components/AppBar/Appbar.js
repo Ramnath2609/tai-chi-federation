@@ -102,7 +102,7 @@ const Appbar = () => {
 
       <Route exact path="/" component={Home} />
       <Route exact path="/what-is-tai-chi" component={whatIsTaiChi} />
-      <Route exact path="/history-of-yangs-yamily" component={HistoryofYangsFamily} />
+      <Route exact path="/history-of-yangs-family" component={HistoryofYangsFamily} />
       <Route exact path="/yang-taiji-quan-in-india" component={YangTaiji} />
       <Route exact path="/benefits-of-taiji-quan" component={BenefitsOfTaijiQuan} />
       <Route exact path="/testimonials" component={Testimonials} />
