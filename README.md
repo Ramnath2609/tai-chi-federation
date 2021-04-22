@@ -1,25 +1,33 @@
-# React JS Landing Page Template
+# TAI CHI FEDERATION OF INDIA
+
+Tai Chi Chuan also called Taijiquan is considered to be the oldest martial art in China. It is in also the effective way to maintain good health. It is an ancient Chinese form of relaxed body movements believed to be created by Royal Physician of the Chinese Emperor more than 1,300 years ago. It legend backed by Chinese folk. There is no authentic historical documentary evidence. But one thing is certain. It was originally conceived as a health system. Taichi was accredited to a Taoist monk named Zhang San Feng as its creator. Taichi was later developed into a martial art by his disciples.
+
+### Setup Development Environment
+
+```sh
+# install dependent packages
+yarn
+# start development server
+yarn start
+# production build
+yarn run build
+```
+### Branching Guidelines
 
 
-### <a href="https://react-landing-page-template.herokuapp.com">LIVE DEMO</a> 
+**master** - is the main branch that contains production ready code. Direct merge to this branch is prohibited
 
-## Description
-This is a ReactJS based landing page template, fit for a startup company/service with a one page view. The design is inspired by a template from <a href="https://www.free-css.com/assets/files/free-css-templates/preview/page234/interact/">Free-CSS.com </a>
-All 'visual' data can be easily modified by changing the data.json file.
+**devlopment** - is the main branch that reflects code for the latest delivered development changes ready for next release
 
-## Make it Yours!
-### 1. Preps
-You will need to have <a href="https://nodejs.org/">Node JS</a> installed on your pc. 
+**hotfix-${HOTFIX-VERSION}** - is the main branch created from "master" that contains the code for a particular hotfix. Direct merge to this merge branch is prohibited. This branch code must then be merged to "master" tagged with "hotfix-version" 
 
-### 2. Clone Files
-After cloning the files, you will have to run ```yarn``` followed by ```yarn start``` in the CLI
-### 3. Add your own data 
-Change the data in the ```data.json``` file as well as add any images to ```public/img/```
-You can also change styles by modifying the ```public/css``` files.
+**feature-${FEATURE-NAME}** - is the main branch for any new feature development that would be created from "dev" branch. Once the feature development is complete, the code will be merged back to "dev" branch through only pull request. 
 
+**bug-${FEATURE-NAME}** - is the main branch for any new bug fixing that would be created from any of "master" or "dev" or "release" branches. Once the bux fixing is complete, the code will be merged back to the source branch through only pull request. 
 
-## Credits
-##### Free CSS 
-<a href="https://www.free-css.com/assets/files/free-css-templates/preview/page234/interact/">Free-CSS.com </a>
+Following naming conventions should be strictly followed for the new branches.
 
-##### Issaaf kattan
+1. All branch names must be lower in case
+2. If new feature to be developed, then a new branch must be created from "dev" branch with naming convention "feature-${feature-name}".
+3. Bugs should be fixed in a separate branch and naming convention of such branches must be "bugfix-${bug-name}".
+4. Pull requests must be raised to move feature or bug fixes to production
