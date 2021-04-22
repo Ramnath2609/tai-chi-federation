@@ -34,96 +34,202 @@ import gallery31 from "../../image/gallery/gallery-31.jpeg";
 import gallery32 from "../../image/gallery/gallery-32.jpeg";
 
 const PhotoGallery = () => {
-    return (
-        <div class="grid-container">
-          <div>
-            <img class='grid-item grid-item-1' src={gallery1} alt=''/>
-          </div>
-          <div>
-            <img class='grid-item grid-item-2' src={gallery2} alt=''/>
-          </div>
-          <div>
-            <img class='grid-item grid-item-3' src={gallery3} alt=''/>
-          </div>
-          <div>
-            <img class='grid-item grid-item-4' src={gallery4} alt=''/>
-          </div>
-          <div>
-            <img class='grid-item grid-item-5' src={gallery5} alt=''/>
-          </div>
-          <div>
-            <img class='grid-item grid-item-6' src={gallery6} alt=''/>
-          </div>
-          <div>
-            <img class='grid-item grid-item-7' src={gallery7} alt=''/>
-          </div>
-          <div>
-            <img class='grid-item grid-item-8' src={gallery8} alt=''/>
-          </div>
-          <div>
-            <img class='grid-item grid-item-9' src={gallery9} alt=''/>
-          </div>
-          <div>
-            <img class='grid-item grid-item-10' src={gallery10} alt=''/>
-          </div>
-
-          <div>
-            <img class='grid-item grid-item-1' src={gallery11} alt=''/>
-          </div>
-          <div>
-            <img class='grid-item grid-item-2' src={gallery12} alt=''/>
-          </div>
-          <div>
-            <img class='grid-item grid-item-3' src={gallery13} alt=''/>
-          </div>
-          <div>
-            <img class='grid-item grid-item-4' src={gallery14} alt=''/>
-          </div>
-          <div>
-            <img class='grid-item grid-item-5' src={gallery15} alt=''/>
-          </div>
-          <div>
-            <img class='grid-item grid-item-6' src={gallery16} alt=''/>
-          </div>
-          <div>
-            <img class='grid-item grid-item-7' src={gallery17} alt=''/>
-          </div>
-          <div>
-            <img class='grid-item grid-item-8' src={gallery18} alt=''/>
-          </div>
-          <div>
-            <img class='grid-item grid-item-9' src={gallery19} alt=''/>
-          </div>
-          <div>
-            <img class='grid-item grid-item-10' src={gallery20} alt=''/>
-          </div>
-          <div>
-            <img class='grid-item grid-item-10' src={gallery21} alt=''/>
-          </div> <div>
-            <img class='grid-item grid-item-10' src={gallery22} alt=''/>
-          </div> <div>
-            <img class='grid-item grid-item-10' src={gallery23} alt=''/>
-          </div> <div>
-            <img class='grid-item grid-item-10' src={gallery24} alt=''/>
-          </div> <div>
-            <img class='grid-item grid-item-10' src={gallery25} alt=''/>
-          </div> <div>
-            <img class='grid-item grid-item-10' src={gallery26} alt=''/>
-          </div> <div>
-            <img class='grid-item grid-item-10' src={gallery27} alt=''/>
-          </div> <div>
-            <img class='grid-item grid-item-10' src={gallery28} alt=''/>
-          </div> <div>
-            <img class='grid-item grid-item-10' src={gallery29} alt=''/>
-          </div> <div>
-            <img class='grid-item grid-item-10' src={gallery30} alt=''/>
-          </div> <div>
-            <img class='grid-item grid-item-10' src={gallery31} alt=''/>
-          </div> <div>
-            <img class='grid-item grid-item-10' src={gallery32} alt=''/>
-          </div>
+  return (
+    <div>
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery1} className='img-responsive' alt='' />
         </div>
-    );
+      </div>
+
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery2} className='img-responsive' alt='' />
+        </div>
+      </div>
+
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery3} className='img-responsive' alt='' />
+        </div>
+      </div>
+
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery4} className='img-responsive' alt='' />
+        </div>
+      </div>
+
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery5} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery6} className='img-responsive' alt='' />
+        </div>
+      </div>
+         
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery7} className='img-responsive' alt='' />
+        </div>
+      </div>
+
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery8} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery9} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery10} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery11} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery12} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery13} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery14} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery15} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery16} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery17} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery18} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery19} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery20} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery21} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery22} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery23} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery24} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery25} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery26} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery27} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery28} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery29} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery30} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery31} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+      <div className='col-sm-6 col-md-4 col-lg-4'>
+        <div className='portfolio-item'>
+          <img src={gallery32} className='img-responsive' alt='' />
+        </div>
+      </div>
+      
+    </div>
+  );
 };
 
 export default PhotoGallery;
