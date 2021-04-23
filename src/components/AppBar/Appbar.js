@@ -11,8 +11,9 @@ import PhotoGallery from "../Photo-Gallery/Photo-Gallery";
 import ContactUS from "../Contact-Us/Contact-Us";
 import DownArrow from "../../image/drop-down-arrow.svg"
 import "../componentStyles.css";
+import Logo from "../../image/Logo/Taichi_Logo.jpg";
 
-const Appbar = () => {
+const Appbar = () => { 
   return (
     <>
       <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
@@ -24,15 +25,16 @@ const Appbar = () => {
               <span className='icon-bar'></span>
               <span className='icon-bar'></span>
             </button>
-            <Link className="header-links navbar-brand page-scroll" to="/">
-              <NavLink className="header-title" href="/">Tai Chi Federation of India</NavLink>
-            </Link>
+            <div className="header-links navbar-brand page-scroll">
+              <img class="taichiLogo" src={Logo} alt="logo"/>
+              Tai Chi Federation of India 
+            </div>
           </div>
 
           <Collapse navbar className='collapse navbar-collapse' id='Mobile-view-navbar-collapse'>
             <Nav className="nav navbar-nav navbar-right" navbar >
               <NavItem>
-                <Link className="header-links" to="/">
+              <Link className="header-links" to="/">
                   <NavLink>Home</NavLink>
                 </Link>
               </NavItem>
@@ -43,7 +45,7 @@ const Appbar = () => {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    <Link className="header-dropdown-links" to="/history-of-yangs-family">
+                  <Link className="header-dropdown-links" to="/history-of-yangs-family">
                         <NavLink>History of Yang's Family Taiji Quan</NavLink>
                     </Link>
                   </DropdownItem>

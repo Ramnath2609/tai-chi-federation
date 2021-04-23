@@ -45,18 +45,15 @@ ul, ol {
 	position: relative;
     background: #001835;
     background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);
-    /*background: linear-gradient(to right, #4CA1AF, #2C3E50)*/
 }
-
+ 
 #menu a.navbar-brand {
-	font-family: 'RobotoMedium';
-	font-size: 24px;
-	font-weight: 700;
-	color: #333;
-	text-transform: uppercase;
-	width: 100%;
+    font-family: RobotoBold;
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+    text-transform: uppercase;
     text-align: center;
-	margin-bottom: 15px;
 }
 
 #menu.navbar-default .navbar-nav > li > a {
@@ -76,7 +73,6 @@ ul, ol {
 	bottom: -1px;
 	width: 0;
 	height: 2px;
-	/* background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%); */
 	background: #ffffff;
 	content: "";
 	transition: width 0.2s;
@@ -154,15 +150,14 @@ ul, ol {
 	position: relative;
     margin-top: 30px;
     margin-bottom: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 .jumbotron-content {
 	color: black;
 }
 
 .yang-taiji-list {
-	list-style-type:decimal;
-	font-size: 16px;
+	left: 12% !important;
 }
 .benefits-list {
 	list-style-type: disc;
@@ -179,10 +174,27 @@ ul, ol {
 	display: inline-block;
 }
 
+.TaijiQuan {
+	margin: 0px 0px 15px 0px !important;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 36px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.toLowerCase {
+	text-transform: none !important;
+}
+
+.toLowerCase span {
+	font-size: 18px !important;
+}
 /* Home Title */
 .HomeTitle {
-	color: #333;
-	font-family: 'RobotoMedium';
+    color: #3b4455;
+    font-size: 22px;
+	font-family: RobotoBold;
 }
 
 .homeText {
@@ -190,7 +202,9 @@ ul, ol {
     left: 10%;
     width: 80%;
 	line-height: 30px;
-    font-size: 18px;
+    font-size: 18px !important;
+	color: #667287;
+    letter-spacing: 0.01em;
 }
 
 /* Home horizontal line */
@@ -199,7 +213,7 @@ ul, ol {
     content: "";
 	width: 100%;
     background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
-    height: 4px;
+    height: 2px;
     bottom: 0;
 }
 
@@ -211,22 +225,27 @@ ul, ol {
 .container:before {
 	content: unset !important;
 }
-
-.navbar-header {
-	width: 100%;
-}
-
+ 
 @media screen and (max-width: 760px) {
 	.navbar-header{
 		display: flex;
 		flex-direction: row-reverse;
+		height: 80px;
 	}
 
 	#menu a.navbar-brand{
 		font-size: 20px;
 	}
+
+	.header-title {
+		font-size: 18px;
+	}
 }
 
 .navbar {
 	margin-bottom: 0px !important;
+}
+
+.navbar-nav {
+	padding: 7px 15px;
 }

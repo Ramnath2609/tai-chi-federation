@@ -4,7 +4,7 @@ import "../common/style.css";
 const Testimonials = () => {
     return (
         <div class="comingSoon">
-           Testimonials - Coming Soon...
+            Testimonials - Coming Soon...
         </div>
     );
 };
