@@ -3,7 +3,7 @@ import "../common/style.css";
 
 const whatIsTaiChi = () => {
     return (
-        <div class="comingSoon">
+        <div className="comingSoon">
            whatIsTaiChi - Coming Soon...
         </div>
     );

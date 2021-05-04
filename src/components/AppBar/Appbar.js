@@ -1,5 +1,5 @@
 import React from 'react';
-import { Collapse, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownMenu, DropdownItem, DropdownToggle } from 'reactstrap';
+import { Collapse, Nav, NavItem, UncontrolledDropdown, DropdownMenu, DropdownItem, DropdownToggle } from 'reactstrap';
 import { Link, Route } from "react-router-dom";
 import Home from "../home/home";
 import whatIsTaiChi from "../What-Is-Tai-Chi/what-is-Tai-Chi";
@@ -27,7 +27,7 @@ const Appbar = () => {
               <span className='icon-bar'></span>
             </button>
             <div className="header-links navbar-brand page-scroll">
-              <img class="taichiLogo" src={Logo} alt="logo" />
+              <img className="taichiLogo" src={Logo} alt="logo" />
               Tai Chi Federation of India
             </div>
           </div>
@@ -36,7 +36,7 @@ const Appbar = () => {
             <Nav className="nav navbar-nav navbar-right" navbar >
               <NavItem>
                 <Link className="header-links" to="/">
-                  <NavLink>Home</NavLink>
+                   Home 
                 </Link>
               </NavItem>
               <UncontrolledDropdown nav inNavbar className="dropdown-nav">
@@ -47,17 +47,17 @@ const Appbar = () => {
                 <DropdownMenu right>
                   <DropdownItem>
                     <Link className="header-dropdown-links" to="/history-of-yangs-family">
-                      <NavLink>History of Yang's Family Taiji Quan</NavLink>
+                      History of Yang's Family Taiji Quan
                     </Link>
                   </DropdownItem>
                   <DropdownItem>
                     <Link className="header-dropdown-links" to="/yang-taiji-quan-in-india">
-                      <NavLink>Yang Taiji Quan In India</NavLink>
+                     Yang Taiji Quan In India 
                     </Link>
                   </DropdownItem>
                   <DropdownItem>
                     <Link className="header-dropdown-links" to="/benefits-of-taiji-quan">
-                      <NavLink>Benefits of Taiji Quan</NavLink>
+                       Benefits of Taiji Quan
                     </Link>
                   </DropdownItem>
                 </DropdownMenu>
@@ -65,19 +65,19 @@ const Appbar = () => {
 
               <NavItem>
                 <Link className="header-links" to="/testimonials">
-                  <NavLink>Testimonials</NavLink>
+                 Testimonials 
                 </Link>
               </NavItem>
 
               <NavItem>
                 <Link className="header-links" to="/gallery">
-                  <NavLink>Gallery</NavLink>
+                  Gallery 
                 </Link>
               </NavItem>
 
               <NavItem>
                 <Link className="header-links" to="/contact-us">
-                  <NavLink>Contact Us</NavLink>
+                  Contact Us 
                 </Link>
               </NavItem>
 

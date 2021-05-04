@@ -20,7 +20,7 @@ const ContactUS = () => {
                         <p>E mail:</p>
                     </div>
                     <div className="contact-us-card contact-us-photo">
-                        Photo will display here (Coming Soon)...
+                        Photo will be display here (Coming Soon)...
                 </div>
                 </div>
             </div>

@@ -4,25 +4,25 @@ import { Jumbotron } from "reactstrap"
 
 const YangTaiji = () => {
     return (
-        <div class="homeContent">
+        <div className="homeContent">
             <Jumbotron className="jumbotron-content">
-                <h2 class="header2 TaijiQuan">
-                    <span class="HomeTitle">Yang Taiji Quan in India</span>
-                    <div class="homeHorizontalLine"></div>
+                <h2 className="header2 TaijiQuan">
+                    <span className="HomeTitle">Yang Taiji Quan in India</span>
+                    <div className="homeHorizontalLine"></div>
                 </h2>
-                <p class="homeText">
+                <p className="homeText">
                     Master Michael Selvaraj learnt the art of Taichi first from Indian masters and then received training directly from the fifth and sixth generation grandmasters of the Yang family in China. Grandmaster Fu Shen Yuan appointed Master Sifu Michael Selvaraj as the Indian Chief Coach and authorised him to form new instructors and spread Taichi throughout India. Under his dedicated and committed coaching, Taichi spread all over India. He trained and formed more than 15 instructors during his life time.
                 </p>
 
-                <p class="homeText">
+                <p className="homeText">
                     But it was his dream to spread Taichi throughout the nook and corners of India through committed cadres. Hence he entertained a grand lan in this regard. First,  to form Taichi Federation of India and register it under Indian Trust Act. This would give a legal status to the institution. Accordingly, Taichi Federation of India was registered as a Trust in 4th June 2019. Unfortunately, his premature death, halted the progress of Taichi Federation of India.
                 </p>
 
-                <p class="homeText">
+                <p className="homeText">
                     However, the most loyal and committed disciples of Master Selvaraj, elected Mrs. Rajam Selvaraj as the Managing Trustee of the Taichi Federation of India in 2020 and has been continuing the dream of Master Selvaraj. Regular training sessions are being conducted by observing social distancing and using sanitizers. Two annual camps had been conducted so far. This is the annual event conducted by Master Selvaraj till his death.
                 </p>
 
-                <p class="homeText">
+                <p className="homeText">
                     The following are the members of the Taichi Federation of India Trust
                 </p>
 

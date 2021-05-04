@@ -35,26 +35,26 @@ const Home = () => {
         </div>
       </Carousel>
 
-      <div class="homeContent">
-        <h2 class="header2">
-          <span class="HomeTitle">What is Tai-Chi ?</span>
-          <div class="homeHorizontalLine" />
+      <div className="homeContent">
+        <h2 className="header2">
+          <span className="HomeTitle">What is Tai-Chi ?</span>
+          <div className="homeHorizontalLine" />
         </h2>
-        <p class="homeText">
+        <p className="homeText">
             Tai Chi Chuan also called Taijiquan is considered to be the oldest martial art in China. It is in also the effective way to maintain good health. It is an ancient Chinese form of relaxed body movements believed to be created by Royal Physician of the Chinese Emperor more than 1,300 years ago. It legend backed by Chinese folk. There is no authentic historical documentary evidence. But one thing is certain. It was originally conceived as a health system. Taichi was accredited to a Taoist monk named Zhang San Feng as its creator. Taichi was later developed into a martial art by his disciples.
         </p>
-        <h2 class="header2">
-          <span class="HomeTitle">Philosophy of Tai-Chi ?</span>
-          <div class="homeHorizontalLine" />
+        <h2 className="header2">
+          <span className="HomeTitle">Philosophy of Tai-Chi ?</span>
+          <div className="homeHorizontalLine" />
         </h2>
-        <p class="homeText">
+        <p className="homeText">
             The principles of yielding, softness, centeredness, slowness, balance, suppleness, and rootedness are all elements of Taoist philosophy which Taichi has drawn upon in its understanding of movement. both in relation to health and to martial application. YIN is the negative energy in our body and YANG is the positive energy in our body. When these two contradictory forces function harmoniously, our body maintains good health. When there is discord between these two the body develops blocks which disrupts the flow of the life force. 
          </p>
-         <h2 class="header2">
-          <span class="HomeTitle">Taichi and Jinlidian </span>
-          <div class="homeHorizontalLine" />
+         <h2 className="header2">
+          <span className="HomeTitle">Taichi and Jinlidian </span>
+          <div className="homeHorizontalLine" />
         </h2>
-        <p class="homeText">
+        <p className="homeText">
             It is a complex process to interpret Taichi as the practice of Taichi is accurate and has scientific basis. Master James Fu Quing quan compares the difficulty of controlling the body and movement to building a highly complicated facility which cannot accept a minor deviation. Taichi cannot be understood without understanding Jindilian. Taichi is basically a martial art, the combating skill involves defences and attack whereas Jindilian is the contact point of defence and attack. <br/>
             The perfect combination of Taichi and Jinlidian is both complex and intricate and require continuous learning and practice. This involves body dynamic, biology as well as latent energy of the human body. When the student of Taichi reaches a higher level, he understands that Jindilian is not a static or fixed point. It is fluid and its location changes continuously according to the needs of the situation.  Hence Jindilian is not only important in combat, it can also help to train certain part of the body and also in cultivating mental consciousness. <br/>
             This is the reason that Taichi is based on the spiritual system called Taoism in China. Great Patriarch Yang Lu Chan was known as the founder of Yang style Taijiquan or popularly known as Taichi.   Yang Style Taichi appears soft and weak from the outside. It is also called “Cotton Fist” because the internal energy is manifested through Taichi movement which is similar to reeling silk from the cocoon continuously and never end. Its energy is also like a needle hidden in cotton.<br/>

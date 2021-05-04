@@ -10,7 +10,7 @@ const PureBreadcrumbs = ({ breadcrumbs }) => (
       <div className="breadcrumbsContent" key={match.url} title={breadcrumb.props.children}>
         <Link to={match.url || ""}>
           {
-            breadcrumb.props.children === 'Home' ? <img class="homeIcon" src={Home} alt="home"/> : <span>{breadcrumb.props.children}</span>
+            breadcrumb.props.children === 'Home' ? <img className="homeIcon" src={Home} alt="home"/> : <span>{breadcrumb.props.children}</span>
           }
           </Link>
       </div>
