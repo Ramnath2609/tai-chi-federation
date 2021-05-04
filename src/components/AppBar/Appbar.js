@@ -12,8 +12,9 @@ import ContactUS from "../Contact-Us/Contact-Us";
 import DownArrow from "../../image/drop-down-arrow.svg"
 import "../componentStyles.css";
 import Logo from "../../image/Logo/Taichi_Logo.jpg";
+import Breadcrumb from "../BreadCrumb/breadCrumb";
 
-const Appbar = () => { 
+const Appbar = () => {
   return (
     <>
       <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
@@ -26,27 +27,27 @@ const Appbar = () => {
               <span className='icon-bar'></span>
             </button>
             <div className="header-links navbar-brand page-scroll">
-              <img class="taichiLogo" src={Logo} alt="logo"/>
-              Tai Chi Federation of India 
+              <img class="taichiLogo" src={Logo} alt="logo" />
+              Tai Chi Federation of India
             </div>
           </div>
 
           <Collapse navbar className='collapse navbar-collapse' id='Mobile-view-navbar-collapse'>
             <Nav className="nav navbar-nav navbar-right" navbar >
               <NavItem>
-              <Link className="header-links" to="/">
+                <Link className="header-links" to="/">
                   <NavLink>Home</NavLink>
                 </Link>
               </NavItem>
               <UncontrolledDropdown nav inNavbar className="dropdown-nav">
                 <DropdownToggle nav caret>
-                  Taiji Quan 
-                  <img alt="dropdownarrow" src={DownArrow} className="dropdown-arrow"/>
+                  Taiji Quan
+                  <img alt="dropdownarrow" src={DownArrow} className="dropdown-arrow" />
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                  <Link className="header-dropdown-links" to="/history-of-yangs-family">
-                        <NavLink>History of Yang's Family Taiji Quan</NavLink>
+                    <Link className="header-dropdown-links" to="/history-of-yangs-family">
+                      <NavLink>History of Yang's Family Taiji Quan</NavLink>
                     </Link>
                   </DropdownItem>
                   <DropdownItem>
@@ -61,23 +62,6 @@ const Appbar = () => {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-              {/* <NavItem>
-                <Link className="header-links" to="/history-of-yangs-family">
-                  <NavLink>History of Yang's Family Taiji Quan</NavLink>
-                </Link>
-              </NavItem>
-
-              <NavItem>
-                <Link className="header-links" to="/yang-taiji-quan-in-india">
-                  <NavLink>Yang Taiji Quan In India</NavLink>
-                </Link>
-              </NavItem>
-
-              <NavItem>
-                <Link className="header-links" to="/benefits-of-taiji-quan">
-                  <NavLink>Benefits of Taiji Quan</NavLink>
-                </Link>
-              </NavItem> */}
 
               <NavItem>
                 <Link className="header-links" to="/testimonials">
@@ -102,6 +86,7 @@ const Appbar = () => {
         </div>
       </nav>
 
+      <Breadcrumb />
       <Route exact path="/" component={Home} />
       <Route exact path="/what-is-tai-chi" component={whatIsTaiChi} />
       <Route exact path="/history-of-yangs-family" component={HistoryofYangsFamily} />

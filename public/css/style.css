@@ -274,3 +274,97 @@ ul, ol {
  .portfolio-item:hover .img-responsive {
 	transform: scale(1.1);
   } 
+
+  .breadcrumbs {
+	  display: flex;
+	  margin: 10px;
+  }
+
+  .breadcrumbs .breadcrumbsContent:first-child a {
+    padding-left: 15px;
+    -moz-border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px 0 0 4px;
+}
+.breadcrumbsContent a {
+    color: #FFF;
+    display: block;
+    background: #3498db;
+    text-decoration: none;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px 0 5px;
+    text-align: center;
+    margin-right: 23px;
+
+	font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    font-weight: 500;
+}
+
+.breadcrumbsContent:nth-child(even) a {
+    background-color: #2980b9;
+}
+
+.breadcrumbsContent a:before, .breadcrumbsContent a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    border: 0 solid #3498db;
+    border-width: 15px 10px;
+    width: 0;
+    height: 0;
+
+}
+
+.breadcrumbsContent a:after {
+    left: 100%;
+    border-color: transparent;
+    border-left-color: #3498db;
+}
+
+.breadcrumbsContent a:before {
+    left: -20px;
+    border-left-color: transparent;
+}
+
+.breadcrumbsContent:first-child a:before {
+    border: none;
+}
+
+.breadcrumbsContent:nth-child(even) a:before {
+    border-color: #2980b9;
+    border-left-color: transparent;
+}
+
+.breadcrumbsContent:last-child a {
+    padding-right: 15px;
+    -moz-border-radius: 0 4px 4px 0;
+    -webkit-border-radius: 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.breadcrumbsContent:last-child a:after {
+    border: none;
+}
+
+.breadcrumbsContent a:hover {
+    background-color: #1abc9c;
+}
+.breadcrumbsContent a:hover:before {
+    border-color: #1abc9c;
+    border-left-color: transparent;
+}
+
+.breadcrumbsContent a:hover:after {
+    border-left-color: #1abc9c;
+}
+
+.homeIcon {
+	height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+	margin-top: 4px;
+}
