@@ -7,7 +7,7 @@ const PureBreadcrumbs = ({ breadcrumbs }) => (
   breadcrumbs.length > 1 ? <div className="breadcrumbs">
     {
     breadcrumbs.length > 1 && breadcrumbs.map(({ breadcrumb, match }) => (
-      <div className="breadcrumbsContent" key={match.url}>
+      <div className="breadcrumbsContent" key={match.url} title={breadcrumb.props.children}>
         <Link to={match.url || ""}>
           {
             breadcrumb.props.children === 'Home' ? <img class="homeIcon" src={Home} alt="home"/> : <span>{breadcrumb.props.children}</span>
