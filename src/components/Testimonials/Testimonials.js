@@ -57,7 +57,7 @@ const Testimonials = () => {
             </Jumbotron>
             {data.map(ele => {
                 return (
-                    <Jumbotron>
+                    <Jumbotron key={ele.id}>
                         <h1 className="display-3">{ele.title}</h1>
                         <p className="lead">{ele.subtitle}</p>
                         <hr className="my-2" />

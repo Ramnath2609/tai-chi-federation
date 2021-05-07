@@ -18,7 +18,7 @@ var data = [
         body: "I am aged 70 and I have been practising Taichi for the eight years. Initially I thought that making slow movements might be easy. But it is not so. I was used to accomplish hard task while in duty in the Indian Railways. But Ravi and Sivakumar took lot of efforts to train me. Now I have avoided mental stress and diabetics. I realize now that age is only numbers. This is a good training for those who think that they are old. Now I am also conducting training to students who attend Taichi classes."
     },
     {
-        id:1,
+        id:4,
         title: "P. Sivakumar @ Sivaji",
         subtitle: "Interior Decorator",
         body: "55 is my age and I have been practising Taichi along with Ravi for the last 12 years. Ravi is my class mate. When doctors diagnosed that my LDL level was very high in my blood, they recommended Aanjeo surgery. Therefore, I decided to join Taichi as I heard from my well wishers that Taichi would reduce blood cholesterol. After one month of practice I checked my cholesterol level and I was astonished to find out that my LDL level rduced a bit. Hence I decided to continue practising Taichi. In spite of the professional tension I face, I am able to focus on my work without any disturbance and I am free from minor ailments."
