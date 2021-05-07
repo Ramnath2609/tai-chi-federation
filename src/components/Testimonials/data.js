@@ -1,4 +1,4 @@
-export default [
+var data = [
     {
         id:1,
         title: "A. Sivakumar",
@@ -25,3 +25,4 @@ export default [
     }
 ]
 
+export default data;
