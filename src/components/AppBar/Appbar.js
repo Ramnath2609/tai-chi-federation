@@ -13,6 +13,11 @@ import DownArrow from "../../image/drop-down-arrow.svg"
 import "../componentStyles.css";
 import Logo from "../../image/Logo/Taichi_Logo.jpg";
 import Breadcrumb from "../BreadCrumb/breadCrumb";
+import HomeIcon from "../../image/MenuIcons/home-white.svg";
+import TestimonialsIcon from "../../image/MenuIcons/testimonial-white.svg";
+import PhotoGalleryIcon from "../../image/MenuIcons/photo-gallery-white.svg";
+import ContactUsIcon from "../../image/MenuIcons/contactUs-white.svg";
+import TaichiQuanIcon from "../../image/MenuIcons/Taichi-white.svg";
 
 const Appbar = () => {
   return (
@@ -36,12 +41,14 @@ const Appbar = () => {
             <Nav className="nav navbar-nav navbar-right" navbar >
               <NavItem>
                 <NavLink exact activeClassName="active" className="header-links" to="/">
-                  Home
+                  <img className="Homeicon" src={HomeIcon} alt="HomeIcon" />
+                  <span class="IconText">Home</span>
                 </NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar className="dropdown-nav">
                 <DropdownToggle nav caret>
-                  Taiji Quan
+                  <img className="TestimonialsIcon" src={TaichiQuanIcon} alt="TaichiQuanIcon" />
+                  <span class="IconText">Taiji Quan</span>
                   <img alt="dropdownarrow" src={DownArrow} className="dropdown-arrow" />
                 </DropdownToggle>
                 <DropdownMenu right>
@@ -65,19 +72,22 @@ const Appbar = () => {
 
               <NavItem>
                 <NavLink exact activeClassName="active" className="header-links" to="/testimonials">
-                  Testimonials
+                  <img src={TestimonialsIcon} className="TestimonialsIcon" alt="TestimonialsIcon" />
+                  <span class="IconText">Testimonials</span>
                 </NavLink>
               </NavItem>
 
               <NavItem>
                 <NavLink exact activeClassName="active" className="header-links" to="/gallery">
-                  Gallery
+                  <img src={PhotoGalleryIcon} className="TestimonialsIcon" alt="PhotoGalleryIcon" />
+                  <span class="IconText">Gallery</span>
                 </NavLink>
               </NavItem>
 
               <NavItem>
                 <NavLink exact activeClassName="active" className="header-links" to="/contact-us">
-                  Contact Us
+                  <img src={ContactUsIcon} className="TestimonialsIcon" alt="PhotoGalleryIcon" />
+                  <span class="IconText"> Contact Us</span>
                 </NavLink>
               </NavItem>
 
