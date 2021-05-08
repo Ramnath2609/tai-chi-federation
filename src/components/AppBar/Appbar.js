@@ -1,6 +1,6 @@
 import React from 'react';
 import { Collapse, Nav, NavItem, UncontrolledDropdown, DropdownMenu, DropdownItem, DropdownToggle } from 'reactstrap';
-import { Link, Route } from "react-router-dom";
+import { Route, Switch, NavLink } from "react-router-dom";
 import Home from "../home/home";
 import whatIsTaiChi from "../What-Is-Tai-Chi/what-is-Tai-Chi";
 import HistoryofYangsFamily from "../History-of-Yang's-Family/History-of-Yang's-Family";
@@ -35,9 +35,9 @@ const Appbar = () => {
           <Collapse navbar className='collapse navbar-collapse' id='Mobile-view-navbar-collapse'>
             <Nav className="nav navbar-nav navbar-right" navbar >
               <NavItem>
-                <Link className="header-links" to="/">
-                   Home 
-                </Link>
+                <NavLink exact activeClassName="active" className="header-links" to="/">
+                  Home
+                </NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar className="dropdown-nav">
                 <DropdownToggle nav caret>
@@ -46,39 +46,39 @@ const Appbar = () => {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    <Link className="header-dropdown-links" to="/history-of-yangs-family">
+                    <NavLink exact activeClassName="active" className="header-dropdown-links" to="/history-of-yangs-family">
                       History of Yang's Family Taiji Quan
-                    </Link>
+                    </NavLink>
                   </DropdownItem>
                   <DropdownItem>
-                    <Link className="header-dropdown-links" to="/yang-taiji-quan-in-india">
-                     Yang Taiji Quan In India 
-                    </Link>
+                    <NavLink exact activeClassName="active" className="header-dropdown-links" to="/yang-taiji-quan-in-india">
+                      Yang Taiji Quan In India
+                    </NavLink>
                   </DropdownItem>
                   <DropdownItem>
-                    <Link className="header-dropdown-links" to="/benefits-of-taiji-quan">
-                       Benefits of Taiji Quan
-                    </Link>
+                    <NavLink exact activeClassName="active" className="header-dropdown-links" to="/benefits-of-taiji-quan">
+                      Benefits of Taiji Quan
+                    </NavLink>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
 
               <NavItem>
-                <Link className="header-links" to="/testimonials">
-                 Testimonials 
-                </Link>
+                <NavLink exact activeClassName="active" className="header-links" to="/testimonials">
+                  Testimonials
+                </NavLink>
               </NavItem>
 
               <NavItem>
-                <Link className="header-links" to="/gallery">
-                  Gallery 
-                </Link>
+                <NavLink exact activeClassName="active" className="header-links" to="/gallery">
+                  Gallery
+                </NavLink>
               </NavItem>
 
               <NavItem>
-                <Link className="header-links" to="/contact-us">
-                  Contact Us 
-                </Link>
+                <NavLink exact activeClassName="active" className="header-links" to="/contact-us">
+                  Contact Us
+                </NavLink>
               </NavItem>
 
             </Nav>
@@ -87,14 +87,16 @@ const Appbar = () => {
       </nav>
 
       <Breadcrumb />
-      <Route exact path="/" component={Home} />
-      <Route exact path="/what-is-tai-chi" component={whatIsTaiChi} />
-      <Route exact path="/history-of-yangs-family" component={HistoryofYangsFamily} />
-      <Route exact path="/yang-taiji-quan-in-india" component={YangTaiji} />
-      <Route exact path="/benefits-of-taiji-quan" component={BenefitsOfTaijiQuan} />
-      <Route exact path="/testimonials" component={Testimonials} />
-      <Route exact path="/gallery" component={PhotoGallery} />
-      <Route exact path="/contact-us" component={ContactUS} />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/what-is-tai-chi" component={whatIsTaiChi} />
+        <Route exact path="/history-of-yangs-family" component={HistoryofYangsFamily} />
+        <Route exact path="/yang-taiji-quan-in-india" component={YangTaiji} />
+        <Route exact path="/benefits-of-taiji-quan" component={BenefitsOfTaijiQuan} />
+        <Route exact path="/testimonials" component={Testimonials} />
+        <Route exact path="/gallery" component={PhotoGallery} />
+        <Route exact path="/contact-us" component={ContactUS} />
+      </Switch>
     </>
   )
 }
