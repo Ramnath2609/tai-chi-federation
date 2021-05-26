@@ -17,9 +17,7 @@ yarn run build
 
 **master** - is the main branch that contains production ready code. Direct merge to this branch is prohibited
 
-**devlopment** - is the main branch that reflects code for the latest delivered development changes ready for next release
-
-**hotfix-${HOTFIX-VERSION}** - is the main branch created from "master" that contains the code for a particular hotfix. Direct merge to this merge branch is prohibited. This branch code must then be merged to "master" tagged with "hotfix-version" 
+**development** - is the main branch that reflects code for the latest delivered development changes ready for next release
 
 **feature-${FEATURE-NAME}** - is the main branch for any new feature development that would be created from "dev" branch. Once the feature development is complete, the code will be merged back to "dev" branch through only pull request. 
 
