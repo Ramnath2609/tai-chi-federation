@@ -13,10 +13,15 @@ function Form() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        let formData = new FormData()
-        formData.append("Name", name)
-        formData.append("Email", email)
-        formData.append("Message", message)
+        let formData = {
+            name, 
+            email,
+            message
+        }
+        // let formData = new FormData()
+        // formData.append("Name", name)
+        // formData.append("Email", email)
+        // formData.append("Message", message)
         fetch('/', {
             method: 'POST',
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
