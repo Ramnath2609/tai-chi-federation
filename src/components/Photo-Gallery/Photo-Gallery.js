@@ -33,8 +33,17 @@ import gallery30 from "../../image/gallery/gallery-30.jpg";
 import gallery31 from "../../image/gallery/gallery-31.jpeg";
 import gallery32 from "../../image/gallery/gallery-32.jpeg";
 
-const PhotoGallery = () => {
+const PhotoGallery = (props) => {
+  const { className, isHomeGallery } = props;
   return (
+    <div className={className ? className : ''}>
+    {
+      isHomeGallery ?
+        <h2 className="header2 gallery">
+          <span className="HomeTitle">Photo Gallery</span>
+          <div className="homeHorizontalLine"></div>
+        </h2> : ''
+    }
     <div>
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
@@ -65,13 +74,13 @@ const PhotoGallery = () => {
           <img src={gallery5} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery6} className='img-responsive' alt='' />
         </div>
       </div>
-         
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery7} className='img-responsive' alt='' />
@@ -83,151 +92,151 @@ const PhotoGallery = () => {
           <img src={gallery8} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery9} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery10} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery11} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery12} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery13} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery14} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery15} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery16} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery17} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery18} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery19} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery20} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery21} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery22} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery23} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery24} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery25} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery26} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery27} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery28} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery29} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery30} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery31} className='img-responsive' alt='' />
         </div>
       </div>
-      
+
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
           <img src={gallery32} className='img-responsive' alt='' />
         </div>
       </div>
-      
+    </div>
     </div>
   );
 };

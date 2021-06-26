@@ -2,10 +2,11 @@ import React from "react";
 import "../common/style.css";
 import { Jumbotron } from "reactstrap"
 
-const HistoryofYangsFamily = () => {
+const HistoryofYangsFamily = (props) => {
+    const { className } = props;
     return (
         <div className="homeContent">
-            <Jumbotron className="jumbotron-content">
+            <Jumbotron className= {className ? className : "jumbotron-content"}>
                 <h2 className="header2 TaijiQuan">
                     <span className="HomeTitle">History of Yang's family</span>
                     <div className="homeHorizontalLine"></div>

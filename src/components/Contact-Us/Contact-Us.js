@@ -3,12 +3,20 @@ import "../common/style.css";
 import { Container } from "reactstrap"
 import Form from "../Form";
 
-const ContactUS = () => {
+const ContactUS = (props) => {
+    const { className, isHomeContactUs } = props;
     return (
-        <Container>
+        <Container className={className ? className : ''}>
+            {
+                isHomeContactUs ?
+                    <h2 className="header2 contactUs">
+                        <span className="HomeTitle">Contact Us</span>
+                        <div className="homeHorizontalLine"></div>
+                    </h2> : ''
+            }
             <div className="contact-us">
                 <h3>Anybody who wants to learn Taichi or wants to be a member of the Taichi Federation of India shall
-                contact the Managing Trustee of Taichi Federation of India, Mrs. Rajam Selvaraj in the following :</h3>
+                    contact the Managing Trustee of Taichi Federation of India, Mrs. Rajam Selvaraj in the following :</h3>
                 <div className="cardWrapper">
                     <div className="contact-us-card">
                         <p className="AddressHeader">Address:</p>

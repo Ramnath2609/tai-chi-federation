@@ -2,11 +2,12 @@ import React from "react";
 import "../common/style.css";
 import { Jumbotron } from "reactstrap"
 
-const BenefitsOfTaijiQuan = () => {
+const BenefitsOfTaijiQuan = (props) => {
+    const { className } = props;
     return (
         <div className="homeContent">
-            <Jumbotron className="jumbotron-content">
-                <h2 className="header2 TaijiQuan">
+            <Jumbotron className= { className ? className : "jumbotron-content" }>
+                <h2 className= {className ? "header2 TaijiQuan homeBefinitsheader" : "header2 TaijiQuan"}>
                     <span className="HomeTitle">Benefits of Taichi</span>
                     <div className="homeHorizontalLine"></div>
                 </h2>
