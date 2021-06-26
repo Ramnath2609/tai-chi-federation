@@ -164,3 +164,36 @@ body {
   position: absolute;
   padding-bottom: 30px;
 }
+
+@media only screen and (min-width: 992px)  {
+  .Contactform {
+    width: 50%;
+    background: #fff;
+    box-shadow: 0 16px 26px -10px rgb(0 0 0 / 6%), 0 4px 25px 0 rgb(0 0 0 / 12%);
+  }
+}
+
+.Contactform {
+  margin-right: 0;
+  text-align: center;
+  border-radius: 8px;
+}
+
+@media only screen and (min-width: 992px) {
+.illust {
+  width: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.illust img {
+  width: 100%;
+}
+}
+
+.contactContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

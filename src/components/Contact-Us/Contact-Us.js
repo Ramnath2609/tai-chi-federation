@@ -31,10 +31,8 @@ const ContactUS = (props) => {
                     <div className="contact-us-card contact-us-photo">
                         Photo will be display here (Coming Soon)...
                     </div>
-                    <div>
-                        <Form />
-                    </div>
                 </div>
+                <Form />
             </div>
         </Container>
     );
