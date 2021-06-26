@@ -1,6 +1,7 @@
 import React from "react";
 import "../common/style.css";
 import { Container } from "reactstrap"
+import Form from "../Form";
 
 const ContactUS = () => {
     return (
@@ -21,7 +22,10 @@ const ContactUS = () => {
                     </div>
                     <div className="contact-us-card contact-us-photo">
                         Photo will be display here (Coming Soon)...
-                </div>
+                    </div>
+                    <div>
+                        <Form />
+                    </div>
                 </div>
             </div>
         </Container>
