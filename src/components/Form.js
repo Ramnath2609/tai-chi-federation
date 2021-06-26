@@ -1,5 +1,11 @@
 import React, {useState} from "react";
 
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+}
+
 function Form() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -14,7 +20,7 @@ function Form() {
         fetch('/', {
             method: 'POST',
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString()
+            body: encode({ "form-name": "subscription", formData })
         })
         .then(() => console.log('Form successfully submitted'))
         .catch((error) => alert(error))
