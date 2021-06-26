@@ -21,7 +21,8 @@ function Form() {
     }
 
     return (
-        <form onSubmit={(e) => {handleSubmit(e)}} name="contact" method="POST" data-netlify="true">
+        <form onSubmit={(e) => {handleSubmit(e)}} name="subscription" method="POST" data-netlify="true">
+            <input type="hidden" name="subscription" value="pizzaOrder" />
             <p>
                 <label>Your Name: <input type="text" value={name} onChange={(e) => {setName(e.target.value)}} name="name" /></label>   
             </p>
