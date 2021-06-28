@@ -271,11 +271,15 @@ body {
 }
 
 .testimonial-card {
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem; 
   margin: 1rem;
   background: #fff;
   border-radius: 10px;
   width: 48%;
+  font-family: cursive;
 }
 
 .testimonial-card-title {
