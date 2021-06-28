@@ -6,6 +6,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 ReactDOM.render(
   <React.Fragment>
     <App />
-    </React.Fragment>,
+  </React.Fragment>,
   document.getElementById('root')
 );

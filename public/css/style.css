@@ -540,3 +540,16 @@ a.header-links:hover {
     font-weight: 900;
     padding: 0px 5px;
 }
+
+.swal2-styled.swal2-confirm {
+    font-size: 1.5em !important;
+}
+
+.swal2-title {
+    font-size: 2.875em !important;
+}
+
+.swal2-html-container {
+    font-size: 2em !important;
+}
+

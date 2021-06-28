@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import GetInTouch from "../image/get-in-touch.jpg"
+import Swal from "sweetalert2";
 
 const encode = (data) => {
     return Object.keys(data)
@@ -19,17 +20,21 @@ function Form() {
             email,
             message
         }
-        // let formData = new FormData()
-        // formData.append("Name", name)
-        // formData.append("Email", email)
-        // formData.append("Message", message)
         fetch('/', {
             method: 'POST',
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "subscription", ...formData })
         })
-            .then(() => console.log('Form successfully submitted'))
-            .catch((error) => alert(error))
+            .then(() =>  {
+                console.log('Form successfully submitted')
+                setName("");
+                setEmail("");
+                setMessage("");
+                Swal.fire("Success", "You query has been recieved", "success")
+            })
+            .catch((error) => {
+                Swal.fire("Oops", "Something went wrong", "error")
+            })
     }
 
     return (
