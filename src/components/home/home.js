@@ -14,6 +14,7 @@ import Testimonials from "../Testimonials/Testimonials";
 import PhotoGallery from "../Photo-Gallery/Photo-Gallery";
 import ContactUS from "../Contact-Us/Contact-Us";
 import TaichiVideo from "../Taichi-Video/Taichi-Video";
+import Footer from "../Footer/Footer"
 
 const Home = () => {
   return (
@@ -74,6 +75,7 @@ const Home = () => {
         <PhotoGallery className="homegallery" isHomeGallery={true} />
         <ContactUS className="homeContactUs" isHomeContactUs={true} />
         <TaichiVideo />
+        <Footer />
       </div>
     </>
   );

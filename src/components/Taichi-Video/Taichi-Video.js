@@ -3,6 +3,7 @@ import "../componentStyles.css";
 
 const TaichiVideo = () => {
     return (
+        <>
         <div className="video-responsive">
             <iframe
                 width="853"
@@ -14,6 +15,7 @@ const TaichiVideo = () => {
                 title="Embedded youtube"
             />
         </div>
+        </>
     )
 }
 
