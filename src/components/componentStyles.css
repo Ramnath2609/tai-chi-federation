@@ -114,9 +114,9 @@ body {
 .homegallery {
   display: flex;
   flex-direction: column;
-    background-color: #ffffffcc;
-    background: hsla(0,0%,100%,.8);
-
+  background-color: #ffffffcc;
+  background: hsla(0,0%,100%,.8);
+  padding-bottom: 4rem;
 }
 
 .homegallery .gallery {
@@ -131,8 +131,37 @@ body {
 
 .homeContactUs {
   background: #001835;
-  padding-bottom: 30px !important;
+  padding-bottom: 6rem !important;
+  position: relative;
 }
+
+.homeContactUs::before {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100vw;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  top: -31px;
+  background: #001835;
+  pointer-events: none;
+  transform: skewY(1deg);
+}
+
+.homeContactUs::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100vw;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  background: #001835;
+  pointer-events: none;
+  transform: skewY(1deg);
+}
+
 
 .homeContactUs .contactUs {
     display: flex;
@@ -152,7 +181,9 @@ body {
   overflow: hidden;
   position: relative;
   height: 600px;
+  padding-top: 4rem;
   margin: 30px;
+  flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -164,6 +195,16 @@ body {
   height: 100%;
   width: 70%;
   padding-bottom: 30px;
+}
+
+.video-responsive .HomeTitle {
+  color: #001835;
+  text-transform: uppercase;
+}
+
+.video-responsive .header2 {
+  font-size: 22px;
+  left: 0;
 }
 
 @media only screen and (min-width: 992px)  {

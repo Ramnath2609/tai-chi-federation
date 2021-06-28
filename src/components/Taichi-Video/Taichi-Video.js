@@ -5,6 +5,10 @@ const TaichiVideo = () => {
     return (
         <>
         <div className="video-responsive">
+            <h2 className="header2">
+                <span className="HomeTitle">Video</span>
+                <div className="homeHorizontalLine"></div>
+            </h2>
             <iframe
                 width="853"
                 height="480"
