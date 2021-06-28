@@ -2,6 +2,7 @@ import React from "react";
 import "../common/style.css";
 import data from "./data"
 import { Jumbotron, Container } from "reactstrap"
+import TestimonialCard from "../TestimonialCard";
 
 const Testimonials = (props) => {
     const { className, isHomeTestimonials } = props;
@@ -62,19 +63,18 @@ const Testimonials = (props) => {
                 <p>
                     Let us live according to the rules of life given by Thomas Alva Edison
                 </p>
+                <div className="testimonial-card-container">
+                {data.map(ele => {
+                    return (
+                        <TestimonialCard 
+                            name={ele.title} 
+                            title={ele.subtitle} 
+                            body={ele.body}
+                        />
+                    )
+                })}
+            </div>
             </Jumbotron>
-            {data.map(ele => {
-                return (
-                    <Jumbotron key={ele.id}>
-                        <h1 className="display-3">{ele.title}</h1>
-                        <p className="lead">{ele.subtitle}</p>
-                        <hr className="my-2" />
-                        <p className="testimonials-body">{ele.body}</p>
-                        <p className="lead">
-                        </p>
-                    </Jumbotron>
-                )
-            })}
         </Container>
     );
 };

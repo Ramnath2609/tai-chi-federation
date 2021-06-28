@@ -262,3 +262,24 @@ body {
 .show {
   opacity: 1;
 }
+
+.testimonial-card {
+  padding: 2rem;
+  margin: 1rem;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.testimonial-card-title {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.testimonial-card-author > h3 {
+  margin: 0;
+}
+
+.testimonial-card-title > i {
+  font-size: 4rem;
+  margin-right: 10px;
+}
