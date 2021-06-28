@@ -295,3 +295,20 @@ body {
   font-size: 4rem;
   margin-right: 10px;
 }
+
+.accordion {
+  left: 10%;
+  width: 80%;
+  position: relative;
+  background-color: #f4f4f4;
+}
+
+.accordion__button {
+  font-size: 18px;
+    color: #ff6873;
+    font-weight: 800;
+}
+
+.accordion .accordion__item .accordion__panel p {
+  color: #667287;
+}
