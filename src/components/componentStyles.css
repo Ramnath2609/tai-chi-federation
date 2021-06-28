@@ -312,3 +312,44 @@ body {
 .accordion .accordion__item .accordion__panel p {
   color: #667287;
 }
+.homeHistory {
+  color: #fff;
+  background: #001835;
+  padding: 0px 0 60px;
+  position: relative;
+}
+.homeHistory.homeContent::before {
+  content: "";
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  bottom: -1px;
+  left: 0;
+  background: url(../image//wave.svg) center bottom 90px no-repeat;
+  background-size: 100% auto;
+  pointer-events: none;
+  z-index: 99; 
+  transform: rotate(180deg);
+}
+
+.homeBenefits {
+  color: #fff;
+  background: #001835;
+  padding: 0px 0 100px;
+  position: relative;
+}
+
+
+.homeContent.homeBenefits::before {
+  content: "";
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  bottom: -1px;
+  left: 0;
+  background: url(../image/wave_down.svg) center bottom -24px no-repeat;
+  background-size: 100% auto;
+  pointer-events: none;
+  z-index: 99;
+  transform: rotateY(180deg);
+}

@@ -5,7 +5,7 @@ import { Jumbotron } from "reactstrap"
 const YangTaiji = (props) => {
     const { className } = props;
     return (
-        <div className="homeContent">
+        <div className={className ? "homeContent homeYangTaiji" : "homeContent"}>
             <Jumbotron className= {className ? className : "jumbotron-content" }>
                 <h2 className="header2 TaijiQuan">
                     <span className="HomeTitle">Yang Taiji Quan in India</span>

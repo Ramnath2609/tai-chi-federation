@@ -13,7 +13,7 @@ import {
 const BenefitsOfTaijiQuan = (props) => {
     const { className } = props;
     return (
-        <div className="homeContent">
+        <div className={className ? "homeContent homeBenefits" : "homeContent" } >
             <Jumbotron className={className ? className : "jumbotron-content"}>
                 <h2 className={className ? "header2 TaijiQuan homeBefinitsheader" : "header2 TaijiQuan"}>
                     <span className="HomeTitle">Benefits of Taichi</span>
