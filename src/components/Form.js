@@ -42,16 +42,16 @@ function Form() {
                         <form onSubmit={(e) => { handleSubmit(e) }} name="subscription" method="POST" data-netlify="true">
                             <input type="hidden" name="subscription" value="pizzaOrder" />
                             <p>
-                                <label>Your Name: <input type="text" value={name} onChange={(e) => { setName(e.target.value) }} name="name" /></label>
+                                <input placeholder="Name" type="text" value={name} onChange={(e) => { setName(e.target.value) }} name="name" />
                             </p>
                             <p>
-                                <label>Your Email: <input type="email" value={email} onChange={(e) => { setEmail(e.target.value) }} name="email" /></label>
+                               <input placeholder="Email" type="email" value={email} onChange={(e) => { setEmail(e.target.value) }} name="email" />
                             </p>
                             <p>
-                                <label>Message: <textarea name="message" value={message} onChange={(e) => { setMessage(e.target.value) }}></textarea></label>
+                                <textarea placeholder="Message" rows={4} name="message" value={message} onChange={(e) => { setMessage(e.target.value) }}></textarea>
                             </p>
                             <p>
-                                <button type="submit">Send</button>
+                                <button className="submit-btn" type="submit">Send</button>
                             </p>
                         </form>
                     </div>

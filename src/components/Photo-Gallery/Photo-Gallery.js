@@ -32,6 +32,7 @@ import gallery29 from "../../image/gallery/gallery-29.jpg";
 import gallery30 from "../../image/gallery/gallery-30.jpg";
 import gallery31 from "../../image/gallery/gallery-31.jpeg";
 import gallery32 from "../../image/gallery/gallery-32.jpeg";
+import { Link } from "react-router-dom"
 
 const PhotoGallery = (props) => {
   const { className, isHomeGallery } = props;
@@ -44,6 +45,54 @@ const PhotoGallery = (props) => {
           <div className="homeHorizontalLine"></div>
         </h2> : ''
     }
+    {
+      isHomeGallery ? (
+        <>
+        <div>
+          <div className='col-sm-6 col-md-4 col-lg-4'>
+            <div className='portfolio-item'>
+              <img src={gallery1} className='img-responsive' alt='' />
+            </div>
+          </div>
+
+          <div className='col-sm-6 col-md-4 col-lg-4'>
+            <div className='portfolio-item'>
+              <img src={gallery2} className='img-responsive' alt='' />
+            </div>
+          </div>
+
+          <div className='col-sm-6 col-md-4 col-lg-4'>
+            <div className='portfolio-item'>
+              <img src={gallery3} className='img-responsive' alt='' />
+            </div>
+          </div>
+
+          <div className='col-sm-6 col-md-4 col-lg-4'>
+            <div className='portfolio-item'>
+              <img src={gallery4} className='img-responsive' alt='' />
+            </div>
+          </div>
+
+          <div className='col-sm-6 col-md-4 col-lg-4'>
+            <div className='portfolio-item'>
+              <img src={gallery5} className='img-responsive' alt='' />
+            </div>
+          </div>
+
+          <div className='col-sm-6 col-md-4 col-lg-4'>
+            <div className='portfolio-item'>
+              <img src={gallery6} className='img-responsive' alt='' />
+            </div>
+          </div>
+        </div>
+        <div className="view-gallery-button">
+          <Link to="/gallery">
+            View Gallery
+            <i class="fas fa-camera"></i>
+          </Link>
+        </div>
+        </>
+      ) : (
     <div>
       <div className='col-sm-6 col-md-4 col-lg-4'>
         <div className='portfolio-item'>
@@ -237,6 +286,8 @@ const PhotoGallery = (props) => {
         </div>
       </div>
     </div>
+      )
+    }
     </div>
   );
 };
