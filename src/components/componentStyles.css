@@ -263,11 +263,19 @@ body {
   opacity: 1;
 }
 
+.testimonial-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .testimonial-card {
   padding: 2rem;
   margin: 1rem;
   background: #fff;
   border-radius: 10px;
+  width: 48%;
 }
 
 .testimonial-card-title {
