@@ -212,6 +212,7 @@ body {
     width: 50%;
     background: #fff;
     box-shadow: 0 16px 26px -10px rgb(0 0 0 / 6%), 0 4px 25px 0 rgb(0 0 0 / 12%);
+    margin-right: 30px !important;
   }
 }
 
@@ -223,9 +224,7 @@ body {
 
 @media only screen and (min-width: 992px) {
 .illust {
-  width: 400px;
-  border-radius: 8px;
-  overflow: hidden;
+  width: 500px;
 }
 .illust img {
   width: 100%;

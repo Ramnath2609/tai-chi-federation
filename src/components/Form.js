@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import GetInTouch from "../image/get-in-touch.jpg"
+import GetInTouch from "../image/get-in-touch.png"
 import Swal from "sweetalert2";
 
 const encode = (data) => {
