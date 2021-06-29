@@ -15,6 +15,7 @@ import PhotoGallery from "../Photo-Gallery/Photo-Gallery";
 import ContactUS from "../Contact-Us/Contact-Us";
 import TaichiVideo from "../Taichi-Video/Taichi-Video";
 import Footer from "../Footer/Footer"
+import ScrollToTopBtn from "../ScrollToTop";
 
 const Home = () => {
   return (
@@ -76,6 +77,7 @@ const Home = () => {
         <ContactUS className="homeContactUs" isHomeContactUs={true} />
         <TaichiVideo />
         <Footer />
+        <ScrollToTopBtn />
       </div>
     </>
   );
