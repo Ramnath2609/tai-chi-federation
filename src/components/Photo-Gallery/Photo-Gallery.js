@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect  } from "react";
 import "./gallery-style.css";
 import gallery1 from "../../image/gallery/gallery-1.JPG";
 import gallery2 from "../../image/gallery/gallery-2.JPG";
@@ -35,6 +35,11 @@ import gallery32 from "../../image/gallery/gallery-32.jpeg";
 import { Link } from "react-router-dom"
 
 const PhotoGallery = (props) => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+});
+
   const { className, isHomeGallery } = props;
   return (
     <div className={className ? className : ''}>
