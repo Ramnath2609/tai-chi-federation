@@ -2,11 +2,15 @@ import React from "react";
 import "../common/style.css";
 import { Container } from "reactstrap"
 import Form from "../Form";
+import { useMediaQuery } from 'react-responsive';
 
 const ContactUS = (props) => {
     const { className, isHomeContactUs } = props;
+    const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
+    const mobileViewClass = isMobile ? 'MobileViewContactUs' : '';
+
     return (
-        <Container className={className ? className : ''}>
+        <Container className={`${className ? className : ""} ${mobileViewClass}`}>
             {
                 isHomeContactUs ?
                     <h2 className="header2 contactUs">

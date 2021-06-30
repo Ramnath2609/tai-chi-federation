@@ -3,11 +3,15 @@ import "../common/style.css";
 import data from "./data"
 import { Jumbotron, Container } from "reactstrap"
 import TestimonialCard from "../TestimonialCard";
+import { useMediaQuery } from 'react-responsive';
 
 const Testimonials = (props) => {
     const { className, isHomeTestimonials } = props;
+    const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
+    const mobileViewClass = isMobile ? 'MobileViewTestimonials' : '';
+
     return (
-        <Container className= {className ? className : "testimonials-container" }>
+        <Container className= {`${className ? className : "testimonials-container" } ${mobileViewClass}`}>
             <Jumbotron>
                 {
                     isHomeTestimonials ? 
