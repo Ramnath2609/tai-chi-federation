@@ -362,6 +362,68 @@ body {
     position: relative;
 }
 
+.Contactform .main-heading-ttl {
+  line-height: 1.5;
+  font-family: Domine,serif;
+  font-weight: 700;
+  color: #333;
+}
+
+.Contactform .main-heading-ttl::after {
+  content: ".";
+    color: #c22d2d;
+    font-size: 50px;
+    line-height: 1;
+    margin-left: 5px;
+    display: inline-block;
+    transform: translateY(-4%);
+
+}
+.formNameEmailFields {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.formNameEmailFields input, .inwrap textarea { 
+  padding: 5px 15px!important;
+    border: 1px solid rgba(0,0,0,.1)!important;
+    height: 45px;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+    font-size: 16px!important;
+    outline: none;
+    font-family: inherit;
+    resize: none;
+}
+.formNameEmailFields input:focus, .inwrap textarea:focus { 
+  outline: none;
+  box-shadow: 0 8px 17px 2px rgba(0,0,0,.14)!important;
+ }
+.inwrap textarea, .inwrap .textareaContent {
+  height: 100px;
+  padding: 10px!important;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.formNameEmailFields p {
+  margin: 0 0 10px;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+ }
+
 /* Mobile View */
 .MobileViewContactUs .contact-us .cardWrapper, .MobileViewContactUs .contact-us .contactContainer, .MobileViewTestimonials .jumbotron .testimonial-card-container {
   flex-direction: column;
