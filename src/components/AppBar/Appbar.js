@@ -11,7 +11,7 @@ import PhotoGallery from "../Photo-Gallery/Photo-Gallery";
 import ContactUS from "../Contact-Us/Contact-Us";
 import DownArrow from "../../image/drop-down-arrow.svg"
 import "../componentStyles.css";
-import Logo from "../../image/Logo/Taichi_Logo.jpg";
+import Logo from "../../image/Logo/Taichi_Logo.png";
 import Breadcrumb from "../BreadCrumb/breadCrumb";
 import HomeIcon from "../../image/MenuIcons/home-white.svg";
 import TestimonialsIcon from "../../image/MenuIcons/testimonial-white.svg";
