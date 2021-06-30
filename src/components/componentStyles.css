@@ -319,3 +319,45 @@ body {
   animation: fadeIn 700ms ease-in-out 1s both;
   cursor: pointer;
 }
+
+.navbar-nav .accordion {
+  left: unset;
+  width: unset;
+  position: relative;
+  background-color: unset;
+  margin-bottom: 30px;
+  border: 0px;
+  margin-left: 10px;
+}
+
+.navbar-nav .accordion .accordion__item .accordion__heading .accordion__button .IconText {
+  padding-top: 0px;
+  padding-right: 10px;
+}
+.navbar-nav .accordion .accordion__item .accordion__heading .accordion__button:hover {
+  background-color: unset;
+}
+
+.navbar-nav .accordion .accordion__item .accordion__heading .accordion__button {
+  font-size: 16px;
+    color: white;
+    font-weight: 400;
+    background-color: unset;
+    padding-left: 0px;
+}
+.navbar-nav .accordion .accordion__item .accordion__panel {
+  padding: 0px;
+}
+.navbar-nav .accordion .accordion__item .accordion__panel a {
+  color: #fff;
+
+}
+.navbar-nav .accordion .accordion__item .accordion__panel div {
+  margin: 30px;
+
+}
+
+.navbar-nav .accordion .accordion__item .accordion__heading .accordion__button:before {
+    top: 6px;
+    position: relative;
+}

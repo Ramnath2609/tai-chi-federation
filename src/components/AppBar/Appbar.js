@@ -18,8 +18,17 @@ import TestimonialsIcon from "../../image/MenuIcons/testimonial-white.svg";
 import PhotoGalleryIcon from "../../image/MenuIcons/photo-gallery-white.svg";
 import ContactUsIcon from "../../image/MenuIcons/contactUs-white.svg";
 import TaichiQuanIcon from "../../image/MenuIcons/Taichi-white.svg";
+import { useMediaQuery } from 'react-responsive';
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from 'react-accessible-accordion';
 
 const Appbar = () => {
+  const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
   return (
     <>
       <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
@@ -45,30 +54,60 @@ const Appbar = () => {
                   <span class="IconText">Home</span>
                 </NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar className="dropdown-nav">
-                <DropdownToggle nav caret>
-                  <img className="TestimonialsIcon" src={TaichiQuanIcon} alt="TaichiQuanIcon" />
-                  <span class="IconText">Taiji Quan</span>
-                  <img alt="dropdownarrow" src={DownArrow} className="dropdown-arrow" />
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    <NavLink exact activeClassName="active" className="header-dropdown-links" to="/history-of-yangs-family">
-                      History of Yang's Family Taiji Quan
-                    </NavLink>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <NavLink exact activeClassName="active" className="header-dropdown-links" to="/yang-taiji-quan-in-india">
-                      Yang Taiji Quan In India
-                    </NavLink>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <NavLink exact activeClassName="active" className="header-dropdown-links" to="/benefits-of-taiji-quan">
-                      Benefits of Taiji Quan
-                    </NavLink>
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              {
+                isMobile ? <NavItem>
+                  <Accordion allowZeroExpanded={true}>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          <img className="TestimonialsIcon" src={TaichiQuanIcon} alt="TaichiQuanIcon" />
+                          <span class="IconText">Taiji Quan</span>
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div>
+                          <NavLink exact activeClassName="active" className="header-dropdown-links" to="/history-of-yangs-family">
+                            History of Yang's Family Taiji Quan
+                          </NavLink>
+                        </div>
+                        <div>
+                          <NavLink exact activeClassName="active" className="header-dropdown-links" to="/yang-taiji-quan-in-india">
+                            Yang Taiji Quan In India
+                          </NavLink>
+                        </div>
+                        <div>
+                          <NavLink exact activeClassName="active" className="header-dropdown-links" to="/benefits-of-taiji-quan">
+                            Benefits of Taiji Quan
+                          </NavLink>
+                        </div>
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                  </Accordion>
+                </NavItem> : <UncontrolledDropdown nav inNavbar className="dropdown-nav">
+                  <DropdownToggle nav caret>
+                    <img className="TestimonialsIcon" src={TaichiQuanIcon} alt="TaichiQuanIcon" />
+                    <span class="IconText">Taiji Quan</span>
+                    <img alt="dropdownarrow" src={DownArrow} className="dropdown-arrow" />
+                  </DropdownToggle>
+                  <DropdownMenu right>
+                    <DropdownItem>
+                      <NavLink exact activeClassName="active" className="header-dropdown-links" to="/history-of-yangs-family">
+                        History of Yang's Family Taiji Quan
+                      </NavLink>
+                    </DropdownItem>
+                    <DropdownItem>
+                      <NavLink exact activeClassName="active" className="header-dropdown-links" to="/yang-taiji-quan-in-india">
+                        Yang Taiji Quan In India
+                      </NavLink>
+                    </DropdownItem>
+                    <DropdownItem>
+                      <NavLink exact activeClassName="active" className="header-dropdown-links" to="/benefits-of-taiji-quan">
+                        Benefits of Taiji Quan
+                      </NavLink>
+                    </DropdownItem>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
+              }
 
               <NavItem>
                 <NavLink exact activeClassName="active" className="header-links" to="/testimonials">

@@ -10,6 +10,7 @@
     "react": "^17.0.1",
     "react-accessible-accordion": "^3.3.4",
     "react-dom": "^17.0.1",
+    "react-responsive": "^8.2.0",
     "react-responsive-carousel": "^3.2.18",
     "react-router-breadcrumbs-hoc": "^3.3.1",
     "react-router-dom": "^5.2.0",
