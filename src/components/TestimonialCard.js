@@ -1,9 +1,9 @@
 import React from 'react'
 
 function TestimonialCard(props) {
-    const { name, title, body } = props;
+    const { name, title, body, id } = props;
     return (
-        <div className="testimonial-card">
+        <div className="testimonial-card" key={id}>
             <div className="testimonial-card-body">
                 <p>{body}</p>
             </div>

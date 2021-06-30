@@ -40,10 +40,10 @@ function Form() {
     return (
         <>
             <div className="contactContainer">
-                <div class="illust"><img loading="lazy" src={GetInTouch} alt="contact" /></div>
-                <div class="Contactform">
-                    <h1 class="main-heading-ttl">Get in Touch</h1>
-                    <div class="inwrap">
+                <div className="illust"><img loading="lazy" src={GetInTouch} alt="contact" /></div>
+                <div className="Contactform">
+                    <h1 className="main-heading-ttl">Get in Touch</h1>
+                    <div className="inwrap">
                         <form onSubmit={(e) => { handleSubmit(e) }} name="subscription" method="POST" data-netlify="true">
                             <input type="hidden" name="subscription" value="pizzaOrder" />
                             <p>

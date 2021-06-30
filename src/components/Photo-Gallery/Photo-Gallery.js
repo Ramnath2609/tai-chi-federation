@@ -97,7 +97,7 @@ const PhotoGallery = (props) => {
             <div className="view-gallery-button">
               <Link to="/gallery">
                 View Gallery
-                <i class="fas fa-camera"></i>
+                <i className="fas fa-camera"></i>
               </Link>
             </div>
           </>

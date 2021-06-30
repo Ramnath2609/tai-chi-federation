@@ -51,7 +51,7 @@ const Appbar = () => {
               <NavItem>
                 <NavLink exact activeClassName="active" className="header-links" to="/">
                   <img className="Homeicon" src={HomeIcon} alt="HomeIcon" />
-                  <span class="IconText">Home</span>
+                  <span className="IconText">Home</span>
                 </NavLink>
               </NavItem>
               {
@@ -61,7 +61,7 @@ const Appbar = () => {
                       <AccordionItemHeading>
                         <AccordionItemButton>
                           <img className="TestimonialsIcon" src={TaichiQuanIcon} alt="TaichiQuanIcon" />
-                          <span class="IconText">Taiji Quan</span>
+                          <span className="IconText">Taiji Quan</span>
                         </AccordionItemButton>
                       </AccordionItemHeading>
                       <AccordionItemPanel>
@@ -86,7 +86,7 @@ const Appbar = () => {
                 </NavItem> : <UncontrolledDropdown nav inNavbar className="dropdown-nav">
                   <DropdownToggle nav caret>
                     <img className="TestimonialsIcon" src={TaichiQuanIcon} alt="TaichiQuanIcon" />
-                    <span class="IconText">Taiji Quan</span>
+                    <span className="IconText">Taiji Quan</span>
                     <img alt="dropdownarrow" src={DownArrow} className="dropdown-arrow" />
                   </DropdownToggle>
                   <DropdownMenu right>
@@ -112,21 +112,21 @@ const Appbar = () => {
               <NavItem>
                 <NavLink exact activeClassName="active" className="header-links" to="/testimonials">
                   <img src={TestimonialsIcon} className="TestimonialsIcon" alt="TestimonialsIcon" />
-                  <span class="IconText">Testimonials</span>
+                  <span className="IconText">Testimonials</span>
                 </NavLink>
               </NavItem>
 
               <NavItem>
                 <NavLink exact activeClassName="active" className="header-links" to="/gallery">
                   <img src={PhotoGalleryIcon} className="TestimonialsIcon" alt="PhotoGalleryIcon" />
-                  <span class="IconText">Gallery</span>
+                  <span className="IconText">Gallery</span>
                 </NavLink>
               </NavItem>
 
               <NavItem>
                 <NavLink exact activeClassName="active" className="header-links" to="/contact-us">
                   <img src={ContactUsIcon} className="TestimonialsIcon" alt="PhotoGalleryIcon" />
-                  <span class="IconText"> Contact Us</span>
+                  <span className="IconText"> Contact Us</span>
                 </NavLink>
               </NavItem>
 

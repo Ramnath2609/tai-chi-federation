@@ -74,6 +74,7 @@ const Testimonials = (props) => {
                             name={ele.title} 
                             title={ele.subtitle} 
                             body={ele.body}
+                            id={ele.id}
                         />
                     )
                 })}
